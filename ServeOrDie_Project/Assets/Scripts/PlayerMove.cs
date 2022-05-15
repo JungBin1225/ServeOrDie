@@ -21,9 +21,9 @@ public class PlayerMove : MonoBehaviour
     {
         mousePos = UpdateMousePos();
 
-        if(Mathf.Abs(mousePos.x) > Mathf.Abs(mousePos.y))
+        if(Mathf.Abs(transform.position.x - mousePos.x) > Mathf.Abs(transform.position.y - mousePos.y))
         {
-            if(mousePos.x > 0)
+            if(transform.position.x - mousePos.x < 0)
             {
                 anim.SetInteger("direction", 2);
             }
@@ -34,7 +34,7 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
-            if(mousePos.y > 0)
+            if(transform.position.y - mousePos.y < 0)
             {
                 anim.SetInteger("direction", 1);
             }
