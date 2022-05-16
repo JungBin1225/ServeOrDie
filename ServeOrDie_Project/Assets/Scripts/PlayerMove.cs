@@ -20,10 +20,23 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         mousePos = UpdateMousePos();
+        UpdateDirection(mousePos);
 
-        if(Mathf.Abs(transform.position.x - mousePos.x) > Mathf.Abs(transform.position.y - mousePos.y))
+        Move();
+    }
+
+    public Vector3 UpdateMousePos()
+    {
+        Vector3 mousePos = Input.mousePosition;
+
+        return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    private void UpdateDirection(Vector3 mouse)
+    {
+        if (Mathf.Abs(transform.position.x - mouse.x) > Mathf.Abs(transform.position.y - mouse.y))
         {
-            if(transform.position.x - mousePos.x < 0)
+            if (transform.position.x - mouse.x < 0)
             {
                 anim.SetInteger("direction", 2);
             }
@@ -34,7 +47,7 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
-            if(transform.position.y - mousePos.y < 0)
+            if (transform.position.y - mouse.y < 0)
             {
                 anim.SetInteger("direction", 1);
             }
@@ -43,14 +56,17 @@ public class PlayerMove : MonoBehaviour
                 anim.SetInteger("direction", 3);
             }
         }
+    }
 
-        float xMove = Input.GetAxis("Horizontal");
-        float yMove = Input.GetAxis("Vertical");
+    private void Move()
+    {
+        float xMove = Input.GetAxisRaw("Horizontal");
+        float yMove = Input.GetAxisRaw("Vertical");
 
         Vector2 getVel = new Vector2(xMove, yMove) * speed;
         rigidbody.velocity = getVel;
 
-        if(rigidbody.velocity.magnitude == 0)
+        if (rigidbody.velocity.magnitude == 0)
         {
             anim.SetBool("isMove", false);
         }
@@ -58,12 +74,5 @@ public class PlayerMove : MonoBehaviour
         {
             anim.SetBool("isMove", true);
         }
-    }
-
-    private Vector3 UpdateMousePos()
-    {
-        Vector3 mousePos = Input.mousePosition;
-
-        return Camera.main.ScreenToWorldPoint(mousePos);
     }
 }

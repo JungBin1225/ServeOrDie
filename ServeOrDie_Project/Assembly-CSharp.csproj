@@ -59,12 +59,14 @@
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\AnimatedCharacterSelection.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\AnimatedObjectsGroup.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\StaggerAnimation.cs" />
-    <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\MoveMouseCursor.cs" />
+    <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\WeaponController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Documentation.txt" />
+    <None Include="Assets\Assets\FreePixelFood\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
