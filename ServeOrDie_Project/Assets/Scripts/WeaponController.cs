@@ -12,7 +12,9 @@ public class WeaponController : MonoBehaviour
     private bool shootAble;
 
     public float shootDuration;
-    public GameObject bullet;
+    public float damage;
+    public float speed;
+    public GameObject bulletPrefab;
 
     void Start()
     {
@@ -43,7 +45,7 @@ public class WeaponController : MonoBehaviour
         {
             if(shootAble)
             {
-                Debug.Log("das"); // ÃÑ¾Ë »ý¼º
+                GenerateBullet(speed, damage, mousePos);
                 coolTime = shootDuration;
             }
             
@@ -55,12 +57,12 @@ public class WeaponController : MonoBehaviour
         mousePos = player.UpdateMousePos();
         mousePos = new Vector3(mousePos.x, mousePos.y, 0);
 
-        transform.localPosition = mousePos.normalized * 0.3f;
+        transform.localPosition = (mousePos - player.gameObject.transform.position).normalized * 0.3f;
 
-        Vector2 direction = (mousePos.normalized * 100) - transform.position;
+        Vector2 direction = mousePos - player.gameObject.transform.position;
         transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
 
-        if (mousePos.y > 0)
+        if (player.gameObject.transform.position.y - mousePos.y < 0)
         {
             weaponSprite.sortingOrder = playerSprite.sortingOrder - 1;
         }
@@ -68,5 +70,13 @@ public class WeaponController : MonoBehaviour
         {
             weaponSprite.sortingOrder = playerSprite.sortingOrder + 1;
         }
+    }
+
+    private void GenerateBullet(float speed, float damage, Vector3 mousePos)
+    {
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        bullet.GetComponent<BulletController>().SetTarget(mousePos);
+        bullet.GetComponent<BulletController>().SetSpeed(speed);
+        bullet.GetComponent<BulletController>().SetDamage(damage);
     }
 }

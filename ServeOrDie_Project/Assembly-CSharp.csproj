@@ -56,13 +56,14 @@
     <Compile Include="Assets\Assets\TopDown 2D RPG BE3\ReadMe\Scripts\ReadmeBE3.cs" />
     <Compile Include="Assets\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\SetAnimatorParameter.cs" />
+    <Compile Include="Assets\Scripts\WeaponController.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\AnimatedCharacterSelection.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\AnimatedObjectsGroup.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\StaggerAnimation.cs" />
     <Compile Include="Assets\Scripts\MoveMouseCursor.cs" />
     <Compile Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\WeaponController.cs" />
+    <Compile Include="Assets\Scripts\BulletController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\KrishnaPalacio\MINIFANTASY Dungeon - Super Low Res 2D Pixel Art by Krishna Palacio\Documentation.txt" />
