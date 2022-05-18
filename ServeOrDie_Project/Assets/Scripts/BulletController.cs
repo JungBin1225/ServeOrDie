@@ -44,7 +44,12 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag != "Player")
+        if (collision.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<EnemyController>().GetDamage(damage);
+        }
+
+        if (collision.tag != "Player")
         {
             Destroy(this.gameObject);
         }
