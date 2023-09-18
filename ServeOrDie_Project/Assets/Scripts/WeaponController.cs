@@ -16,10 +16,13 @@ public class WeaponController : MonoBehaviour
     public float damage;
     public float speed;
     public GameObject bulletPrefab;
+<<<<<<< HEAD
     public GameObject effectPrefab;
 =======
     public GameObject bullet;
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
 
     void Start()
     {
@@ -81,7 +84,6 @@ public class WeaponController : MonoBehaviour
     private void GenerateBullet(float speed, float damage, Vector3 mousePos)
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
-        GameObject effect = Instantiate(effectPrefab, transform);
         bullet.GetComponent<BulletController>().SetTarget(mousePos);
         bullet.GetComponent<BulletController>().SetSpeed(speed);
         bullet.GetComponent<BulletController>().SetDamage(damage);

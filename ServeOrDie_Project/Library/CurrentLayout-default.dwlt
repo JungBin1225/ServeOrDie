@@ -20,10 +20,14 @@ MonoBehaviour:
     height: 997
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
 =======
   m_Title: Project
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+  m_Title: Game
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -127,10 +131,14 @@ MonoBehaviour:
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 39
 =======
   controlID: 113
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+  controlID: 107
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,10 +164,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 40
 =======
   controlID: 38
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+  controlID: 116
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,10 +197,14 @@ MonoBehaviour:
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 41
 =======
   controlID: 39
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+  controlID: 117
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -415,6 +431,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 40fbffff
@@ -423,6 +440,11 @@ MonoBehaviour:
       m_LastClickedID: -40510
       m_ExpandedIDs: 4e57ffff0ef9ffff14f9ffff40fbffff0a420000
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+      m_SelectedIDs: 36420000
+      m_LastClickedID: 16950
+      m_ExpandedIDs: 40fbffff124200003e4200005042000060420000
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -483,6 +505,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.25392514, y: 1.33737, z: -11.775861}
     speed: 2
     m_Value: {x: 0.25392514, y: 1.33737, z: -11.775861}
@@ -491,6 +514,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.8194532, y: -1.4340662, z: 19.949368}
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+    m_Target: {x: 1.3282646, y: 0.2658172, z: -4.2079606}
+    speed: 2
+    m_Value: {x: 1.3282646, y: 0.2658172, z: -4.2079606}
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -542,6 +570,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 4.9781938
     speed: 2
     m_Value: 4.9781938
@@ -550,6 +579,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 9.03923
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+    m_Target: 6.245367
+    speed: 2
+    m_Value: 6.245367
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -629,8 +663,6 @@ MonoBehaviour:
     - {fileID: -6342043386427955769, guid: c9c900831f7493f44ac65c72d967e33f, type: 2}
     - {fileID: 8342269163459283995, guid: 7ab55d0df23d84543b401d43a1387822, type: 2}
     - {fileID: 7536198779414320035, guid: 71c41c689ab802640834a002474806f2, type: 2}
-    - {fileID: 1107529147514217650, guid: 07d2eac286e66e8479d99fa0b9c9270f, type: 2}
-    - {fileID: 5278714624546536634, guid: 8b16af93b9b8c9d40992f04561b0c93f, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.5220063
       e01: 0
@@ -680,42 +712,10 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.7865326
-      e01: 0
-      e02: 0
-      e03: -2.6151733
-      e10: 0
-      e11: 0.7865326
-      e12: 0
-      e13: 165.08864
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.5055219
-      e01: 0
-      e02: 0
-      e03: -48.374405
-      e10: 0
-      e11: 0.5055219
-      e12: 0
-      e13: 182.62215
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 07d2eac286e66e8479d99fa0b9c9270f, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 71c41c689ab802640834a002474806f2, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 1107529147514217650, guid: 07d2eac286e66e8479d99fa0b9c9270f, type: 2}
+  - m_Target: {fileID: 7536198779414320035, guid: 71c41c689ab802640834a002474806f2, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -766,18 +766,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity\ServeOrDie\ServeOrDie_Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 26}
     m_SelectedIDs: 00480000
@@ -789,6 +790,12 @@ MonoBehaviour:
     m_LastClickedID: 17988
     m_ExpandedIDs: 00000000204600002246000024460000264600003046000032460000344600003e460000384c00002c4f0000a072000000ca9a3b
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: fa460000
+    m_LastClickedID: 18170
+    m_ExpandedIDs: 00000000d6460000d8460000da460000dc460000de460000e0460000e2460000e4460000e6460000e846000000ca9a3b
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -817,10 +824,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000004447000046470000484700004a4700004c4700004e47000050470000524700005447000056470000584700005a4700005c470000
 =======
     m_ExpandedIDs: 0000000020460000224600002446000026460000284600002a4600002c4600002e460000304600003246000034460000
 >>>>>>> parent of c631075 (총알 발사 추가)
+=======
+    m_ExpandedIDs: 00000000d6460000d8460000da460000dc460000de460000e0460000e2460000e4460000e6460000e8460000
+>>>>>>> parent of b16d667 (총 발사 이펙트 추가)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -848,7 +859,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300002c500000064a000022740000e0470000a4480000
+    m_ExpandedInstanceIDs: c62300002c500000064a000022740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
