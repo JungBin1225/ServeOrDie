@@ -12,10 +12,14 @@ public class WeaponController : MonoBehaviour
     private bool shootAble;
 
     public float shootDuration;
+<<<<<<< HEAD
     public float damage;
     public float speed;
     public GameObject bulletPrefab;
     public GameObject effectPrefab;
+=======
+    public GameObject bullet;
+>>>>>>> parent of c631075 (총알 발사 추가)
 
     void Start()
     {
@@ -46,7 +50,7 @@ public class WeaponController : MonoBehaviour
         {
             if(shootAble)
             {
-                GenerateBullet(speed, damage, mousePos);
+                Debug.Log("das"); // �Ѿ� ����
                 coolTime = shootDuration;
             }
             
@@ -58,12 +62,12 @@ public class WeaponController : MonoBehaviour
         mousePos = player.UpdateMousePos();
         mousePos = new Vector3(mousePos.x, mousePos.y, 0);
 
-        transform.localPosition = (mousePos - player.gameObject.transform.position).normalized * 0.3f;
+        transform.localPosition = mousePos.normalized * 0.3f;
 
-        Vector2 direction = mousePos - player.gameObject.transform.position;
+        Vector2 direction = (mousePos.normalized * 100) - transform.position;
         transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
 
-        if (player.gameObject.transform.position.y - mousePos.y < 0)
+        if (mousePos.y > 0)
         {
             weaponSprite.sortingOrder = playerSprite.sortingOrder - 1;
         }
@@ -72,6 +76,7 @@ public class WeaponController : MonoBehaviour
             weaponSprite.sortingOrder = playerSprite.sortingOrder + 1;
         }
     }
+<<<<<<< HEAD
 
     private void GenerateBullet(float speed, float damage, Vector3 mousePos)
     {
@@ -81,4 +86,6 @@ public class WeaponController : MonoBehaviour
         bullet.GetComponent<BulletController>().SetSpeed(speed);
         bullet.GetComponent<BulletController>().SetDamage(damage);
     }
+=======
+>>>>>>> parent of c631075 (총알 발사 추가)
 }
